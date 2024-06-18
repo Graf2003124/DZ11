@@ -4,11 +4,11 @@ public class Main {
         System.out.println("Задача №1");
         determineWhatYear(year);
         System.out.println("Задача №2");
-        int clientDeviceYear = 2000;
+        int clientDeviceYear = 2014;
         int clientOS = 0;
         determineAppVersion(clientDeviceYear, clientOS);
         System.out.println("Задача №3");
-        totalNumberOfDeliveryDays(50);
+        totalNumberOfDeliveryDays(75);
     }
     public static void determineWhatYear(int year) {
         if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
@@ -35,16 +35,15 @@ public class Main {
         }
     }
     public static void totalNumberOfDeliveryDays(int deliveryDistance) {
-        int i = 0;
         int deliveryTime = 1;
         if (deliveryDistance <= 20) {
             System.out.println("Срок доставки: " + deliveryTime + " день");
         }
         if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            System.out.println("Потребуется " + (i + 1 + deliveryTime) + " дня доставки");
+            System.out.println("Потребуется дней: " + (1 + deliveryTime));
         }
         if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            System.out.println("Потребуется " + (i + 2 + deliveryTime) + " дня доставки");
+            System.out.println("Потребуется дней: " + (2 + deliveryTime) );
         }
         if (deliveryDistance > 100) {
             System.out.println("Доставка свыше 100 км не осуществляется");
